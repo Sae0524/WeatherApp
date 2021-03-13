@@ -6,13 +6,67 @@ body {
   margin: 0;
   background: #222;
   background-image: url(https://www.theroadtripexpert.com/wp-content/uploads/2020/05/Canada-road-trip.jpg.webp);
+  font-size: 120%;
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 2em;
   border-radius: 30px;
   width: 100%;
   max-width: 420px;
   margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  background: rgba(29, 25, 25, 0.089);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 24px;
+  background: rgba(29, 25, 25, 0.089);
+  font-family: inherit;
+  font-size: 80%;
+  width: calc(100% - 100px);
+}
+
+
+button:hover {
+  background: rgba(29, 25, 25, 0.39);
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
 }
