@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
- 
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="card">
@@ -17,13 +17,47 @@
     </div>
     <div class="weather">
       <h2 class="city">Weather in Vancouver</h2>
-      <div><span class="temp">9</span>°C</div>
+      <div class="temp">9°C</div>
       <img src="" alt="" class="icon" />
       <div class="description">Mostly Cloudy</div>
-      <div >Humidity: <span class="humidity">51</span>%</div>
-      <div ><span class="wind">6.2</span> km/h</div>
+      <div class="humidity">Humidity: 51%</div>
+      <div class="wind">Wind speed:6.2 km/h</div>
     </div>
   </div>
-  <script src="script.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="weather loading">
+      <h2 class="city">Weather in Vancouver</h2>
+      <h1 class="temp">9°C</h1>
+      <div class="flex">
+        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+        <div class="description">Cloudy</div>
+      </div>
+      <div class="humidity">Humidity: 60%</div>
+      <div class="wind">Wind speed: 6.2 km/h</div>
+    </div>
+  </div>
+</body>
+
 </html>
