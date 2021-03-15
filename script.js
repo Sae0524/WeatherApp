@@ -52,3 +52,10 @@ document
   });
 
 weather.fetchWeather("Vancouver");
+
+
+// set interval of refresh in every 2 minute
+const timer = 120000    
+window.addEventListener('load',function(){
+  setInterval('location.reload()',timer);
+});
